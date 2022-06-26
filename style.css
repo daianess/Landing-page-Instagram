@@ -2,13 +2,163 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  tex-decoration: none;
   font-family: sans-serif;
   font-size: 14px;
 }
 
 body {
   width: 100%;
-  min-heigth: 100vh;
-  
+  min-height: 100vh;
+  background-color: #ffff ;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-right: 5rem;
+}
+
+.phone img {
+  height: 50rem;
+}
+
+.acesso {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(25deg, #d7deeb, #f1f5fb);
+  width: 80%;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+.group:nth-child(1) {
+  min-height: 20rem;
+}
+
+.group2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color:  #d7deeb;
+  width: 80%;
+  padding: 1.3rem 0;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 10rem;
+}
+
+.login {
+  background-color: #464bff;
+  color: #ffff;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+.logout {
+  color: #1a1a1d
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: #1a1a1d
+}
+
+.link {
+  color: #a238ff;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+  font-weight: bold;
+  color: #a238ff;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('./img/apple-button.png')  
+}
+
+.app-download:nth-child(2) {
+  background-image: url('./img/googleplay-button.png')
+}
+
+@media (max-width: 124px) {
+  .wrapper {
+    width: 90%
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    width: 90%
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .acesso {
+    width: 100%;
+  }
 }
