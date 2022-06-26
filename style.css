@@ -6,3 +6,9 @@
   font-family: sans-serif;
   font-size: 14px;
 }
+
+body {
+  width: 100%;
+  min-heigth: 100vh;
+  
+}
